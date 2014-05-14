@@ -56,6 +56,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 	.site,
 	.site-header,
+	#site-header img,
 	.hentry,
 	.site-content .entry-header,
 	.site-content .entry-content,
@@ -68,9 +69,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	.comments-area,
 	.attachment .entry-attachment .attachment {
 		max-width: 100%;
+		text-align: center;
 	}
 
-	#site-header img,
 	.search-toggle,
 	.site-navigation,
 	.site-content nav,
