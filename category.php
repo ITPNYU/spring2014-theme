@@ -14,19 +14,9 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-			<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : 
 
 			the_title( '<header><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description"><em>%s</em></div>', $term_description );
-					endif;
-				?>
-			</header><!-- .archive-header -->
-
-			<?php
 					// Start the Loop.
 					$cat_id = get_queried_object()->term_id;
 					$category_posts = get_posts(array(
