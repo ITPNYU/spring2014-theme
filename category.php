@@ -14,8 +14,9 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
-			<?php if ( have_posts() ) : 
-
+			<?php if ( have_posts() ) : ?>
+<h1 class="entry-title"><?php printf( __( 'Category: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+			<?php
 					// Start the Loop.
 					$cat_id = get_queried_object()->term_id;
 					$category_posts = get_posts(array(
