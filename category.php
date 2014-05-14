@@ -16,7 +16,6 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : 
 
-			the_title( '<header><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
 					// Start the Loop.
 					$cat_id = get_queried_object()->term_id;
 					$category_posts = get_posts(array(
