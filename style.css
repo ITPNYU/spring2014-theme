@@ -69,7 +69,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	.comments-area,
 	.attachment .entry-attachment .attachment {
 		max-width: 100%;
-		text-align: center;
+		margin: auto;
 	}
 
 	.search-toggle,
