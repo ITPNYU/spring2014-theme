@@ -14,9 +14,14 @@
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
 		<?php
 			endif;
-			echo "<li>";
+			echo "<tr>\n";
+			echo "<td>";
 			the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
-			echo " - <em>" . get_post_meta( get_the_ID(), 'student', true) . "</em></li>\n";
+			echo "</td>\n";
+			echo "<td>" . get_post_meta( get_the_ID(), 'student', true) . "</td>\n";
+			echo "<td>" . get_post_meta( get_the_ID(), 'instructor', true) . "</td>\n";
+			echo "<td>" . get_post_meta( get_the_ID(), 'class', true) . "</td>\n";
+			echo "</tr>";
 		?>
 
 	</header><!-- .entry-header -->
