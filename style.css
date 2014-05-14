@@ -159,6 +159,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	.gallery-columns-2.gallery-size-thumbnail,
 	.gallery-columns-3.gallery-size-thumbnail {
 		display: block;
+		text-align: center;
 	}
 
 	.archive-title,
