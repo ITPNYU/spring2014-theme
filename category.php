@@ -16,9 +16,7 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
-
+			the_title( '<header><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
