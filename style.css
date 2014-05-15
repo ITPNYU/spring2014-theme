@@ -161,7 +161,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 
 	#content .gallery {
-		display: none;
+		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
