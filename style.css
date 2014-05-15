@@ -160,7 +160,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		display: block;
 	}
 
-	.gallery-item, .gallery-icon {
+	.gallery-item, .gallery-icon, .gallery-1 {
 		display: block;
 		margin: auto;
 	}
